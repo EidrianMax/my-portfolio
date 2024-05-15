@@ -1,0 +1,53 @@
+---
+import Container from '../components/Container.astro'
+import LinkedIn from '../icons/LinkedIn.astro'
+import Github from '../icons/Github.astro'
+import Mail from '../icons/Mail.astro'
+---
+
+<section class="py-32">
+  <Container>
+    <img
+      class="mx-auto size-28 rounded-full mb-10"
+      src="http://via.placeholder.com/112x112"
+      alt="Imagen de perfil de Adrian Alvarado"
+    />
+
+    <h1
+      class="text-4xl/tight text-center text-balance font-black mb-6 text-neutral-1"
+    >
+      Hello, I'm Kartik, creative designer based in India.
+    </h1>
+
+    <p class="text text-center mb-6">
+      A Product Designer and Visual Developer in India. I specialize in UI/UX
+      Design, Responsive Web Design and Visual Development.
+    </p>
+
+    <nav class="flex justify-center">
+      <ul class="flex gap-4">
+        <li>
+          <a href="https://github.com/adrimax">
+            <Github
+              class="size-8 hover:stroke-neutral-1 hover:scale-110 transition"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/adrian-alvarado-9b246022b/">
+            <LinkedIn
+              class="size-8 hover:stroke-neutral-1 hover:scale-110 transition"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:aalvarado.bcn@artsgrafiques.org">
+            <Mail
+              class="size-8 hover:stroke-neutral-1 hover:scale-110 transition"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </Container>
+</section>

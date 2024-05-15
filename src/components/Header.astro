@@ -1,0 +1,27 @@
+---
+import Container from './Container.astro'
+---
+
+<header>
+  <Container>
+    <nav class="flex justify-between items-center text-neutral-1">
+      <a
+        class="bg-gradient-to-tr from-[#BC3CD8] to-[#C54B8C] text-transparent bg-clip-text text-4xl font-semibold"
+        href="/"
+      >
+        LOGO
+      </a>
+
+      <ul class="flex gap-8 text-lg font-medium">
+        <li>
+          <a
+            class="relative bg-gradient-to-tr from-[#BC3CD8] to-[#C54B8C] text-transparent bg-clip-text before:content-[''] before:block before:w-1/5 before:h-[2px] before:bg-neutral-1 before:rounded-xl before:absolute before:bottom-[-7px] before:left-1/2 before:translate-x-[-50%]"
+            href="/">HOME</a
+          >
+        </li>
+        <li><a href="#proyectos">PROYECTOS</a></li>
+        <li><a href="#acerca-de-mi">ACERCA DE MÍ</a></li>
+      </ul>
+    </nav>
+  </Container>
+</header>

@@ -1,0 +1,90 @@
+---
+import Container from '../components/Container.astro'
+import LinkIcon from '../components/LinkIcon.astro'
+import Github from '../icons/Github.astro'
+import Link from '../icons/Link.astro'
+
+const proyects = [
+  {
+    name: 'Haakon',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repudiandae asperiores harum totam, beatae cum recusandae unde ut in dolores voluptates facere, necessitatibus, amet obcaecati saepe minima delectus! Dolore, exercitationem.',
+    img: 'http://via.placeholder.com/200',
+    type: 'Full-stack',
+    repository: '#',
+    preview: '#',
+  },
+  {
+    name: 'Haakon',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repudiandae asperiores harum totam, beatae cum recusandae unde ut in dolores voluptates facere, necessitatibus, amet obcaecati saepe minima delectus! Dolore, exercitationem.',
+    img: 'http://via.placeholder.com/200',
+    type: 'Full-stack',
+    repository: '#',
+    preview: '#',
+  },
+  {
+    name: 'Haakon',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repudiandae asperiores harum totam, beatae cum recusandae unde ut in dolores voluptates facere, necessitatibus, amet obcaecati saepe minima delectus! Dolore, exercitationem.',
+    img: 'http://via.placeholder.com/200',
+    type: 'Full-stack',
+    repository: '#',
+    preview: '#',
+  },
+  {
+    name: 'Haakon',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repudiandae asperiores harum totam, beatae cum recusandae unde ut in dolores voluptates facere, necessitatibus, amet obcaecati saepe minima delectus! Dolore, exercitationem.',
+    img: 'http://via.placeholder.com/200',
+    type: 'Full-stack',
+    repository: '#',
+    preview: '#',
+  },
+]
+---
+
+<section>
+  <Container>
+    <h2 class="text-4xl text-neutral-1 font-bold mb-12">Proyectos</h2>
+
+    <ul class="grid gap-16">
+      {
+        proyects.map(proyect => (
+          <li class="group">
+            <div class="flex gap-6">
+              <img
+                class="rounded-xl flex-1 object-cover group-odd:order-1"
+                src={proyect.img}
+                alt={proyect.name}
+              />
+              <div class="self-end flex gap-4 flex-col flex-1">
+                <h3 class="uppercase text-neutral-1 font-bold text-sm">
+                  {proyect.name}
+                </h3>
+                <p>{proyect.description}</p>
+                <p class="text-sm">{proyect.type}</p>
+
+                <nav class="flex gap-2">
+                  <LinkIcon href="#">
+                    <Github
+                      slot="icon"
+                      class="size-6 hover:stroke-neutral-1 hover:scale-110 transition"
+                    />
+                  </LinkIcon>
+
+                  <LinkIcon href="#">
+                    <Link
+                      slot="icon"
+                      class="size-6 hover:stroke-neutral-1 hover:scale-110 transition"
+                    />
+                  </LinkIcon>
+                </nav>
+              </div>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </Container>
+</section>

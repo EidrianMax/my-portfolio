@@ -3,6 +3,7 @@ import Container from '../components/Container.astro'
 import LinkedIn from '../icons/LinkedIn.astro'
 import Github from '../icons/Github.astro'
 import Mail from '../icons/Mail.astro'
+import LinkIcon from '../components/LinkIcon.astro'
 ---
 
 <section class="py-32">
@@ -27,25 +28,32 @@ import Mail from '../icons/Mail.astro'
     <nav class="flex justify-center">
       <ul class="flex gap-4">
         <li>
-          <a href="https://github.com/adrimax">
+          <LinkIcon href="https://github.com/adrimax">
             <Github
+              slot="icon"
               class="size-8 hover:stroke-neutral-1 hover:scale-110 transition"
             />
-          </a>
+          </LinkIcon>
         </li>
+
         <li>
-          <a href="https://www.linkedin.com/in/adrian-alvarado-9b246022b/">
+          <LinkIcon
+            href="https://www.linkedin.com/in/adrian-alvarado-9b246022b/"
+          >
             <LinkedIn
+              slot="icon"
               class="size-8 hover:stroke-neutral-1 hover:scale-110 transition"
             />
-          </a>
+          </LinkIcon>
         </li>
+
         <li>
-          <a href="mailto:aalvarado.bcn@artsgrafiques.org">
+          <LinkIcon href="mailto:aalvarado.bcn@artsgrafiques.org">
             <Mail
+              slot="icon"
               class="size-8 hover:stroke-neutral-1 hover:scale-110 transition"
             />
-          </a>
+          </LinkIcon>
         </li>
       </ul>
     </nav>

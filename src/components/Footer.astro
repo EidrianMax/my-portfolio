@@ -1,0 +1,51 @@
+---
+import Github from '../icons/Github.astro'
+import LinkedIn from '../icons/LinkedIn.astro'
+import Mail from '../icons/Mail.astro'
+import Container from './Container.astro'
+import LinkIcon from './LinkIcon.astro'
+---
+
+<footer class="py-8">
+  <Container>
+    <p class="text-4xl text-center mb-2">
+      Get <strong class="text-neutral-1">in Touch</strong>
+    </p>
+    <p class="text-center text-xs mb-8">So that we can talk more about...</p>
+    <nav class="flex justify-center mb-8">
+      <ul class="flex gap-4">
+        <li>
+          <LinkIcon href="https://github.com/adrimax">
+            <Github
+              slot="icon"
+              class="size-8 hover:stroke-neutral-1 hover:scale-110 transition"
+            />
+          </LinkIcon>
+        </li>
+
+        <li>
+          <LinkIcon
+            href="https://www.linkedin.com/in/adrian-alvarado-9b246022b/"
+          >
+            <LinkedIn
+              slot="icon"
+              class="size-8 hover:stroke-neutral-1 hover:scale-110 transition"
+            />
+          </LinkIcon>
+        </li>
+
+        <li>
+          <LinkIcon href="mailto:aalvarado.bcn@artsgrafiques.org">
+            <Mail
+              slot="icon"
+              class="size-8 hover:stroke-neutral-1 hover:scale-110 transition"
+            />
+          </LinkIcon>
+        </li>
+      </ul>
+    </nav>
+    <p class="text-center text-xs">
+      Made with ❣️ by <strong class="text-neutral-1">Srinivas Dezign</strong>
+    </p>
+  </Container>
+</footer>
